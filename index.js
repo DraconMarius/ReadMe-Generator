@@ -7,8 +7,9 @@
 - [ ] Asks for email address and add contact instructions
 - [ ] Clikcable table of content within the README
 */
+//conditional for github and linkedin badges
 
-//making object l
+
 
 
 
@@ -17,9 +18,10 @@
 //inquirer to prompt and capture uesr response
 const inquirer = require('inquirer');
 const fs = require("fs"); // filesstem, node basic to write / append files
-const maths = require("./utils/generateMarkdown"); //getting fn for badges 
-const { validateHeaderName } = require('http');
+// const maths = require("./utils/generateMarkdown"); //getting fn for badges 
+// const { validateHeaderName } = require('http');
 const generateMarkdown = require('./utils/generateMarkdown');
+const appendBadge = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 const questions = ["What is the title of your project?",
     "Can you describe your porject for me?",
@@ -75,7 +77,7 @@ function init() {
                 name: "usage",
                 validate(answer) {
                     if (!answer) {
-                        return "*ELI5.Error*"
+                        return "*ELI5* Explain to me like I'm five please"
                     }
                     return true
                 }
@@ -86,7 +88,7 @@ function init() {
                 name: "credit",
                 validate(answer) {
                     if (!answer) {
-                        return "*You gotta at least give credit for yourself*"
+                        return "*You gotta at least give credit to yourself*"
                     }
                     return true
                 }
@@ -95,8 +97,7 @@ function init() {
                 type: "list",
                 message: sixq,
                 name: "license",
-                choices: ["Apache 2.0", "BSD 3-Clause", "BSD 2-Clause", "GNU:GPL(GeneralPublicLicense)", "LesserGPL", "MIT", "Mozilla Public License 2.0", "Common Dev and Distr", "Eclipse Public License 2.0"],
-                default: "NONE",
+                choices: ["NONE", "Apache 2.0", "BSD 3-Clause", "BSD 2-Clause", "GNU:GPL(GeneralPublicLicense)", "LesserGPL", "MIT", "Mozilla Public License 2.0", "Common Dev and Distr", "Eclipse Public License 2.0"],
             },
             {
                 type: "input",
@@ -137,7 +138,7 @@ function init() {
             {
                 type: "input",
                 message: tenq,
-                name: "address",
+                name: "email",
             },
         ]).then((answers) => {
             console.log(answers);
@@ -145,6 +146,7 @@ function init() {
             const markdown = generateMarkdown(answers);
             fs.writeFile(filename, markdown, (err) =>
                 (err) ? console.log("I think I am having a stroke, blame my creator \b" + err) : console.log("sucess??")
+
             );
         })
 };

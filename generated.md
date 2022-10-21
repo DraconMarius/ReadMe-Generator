@@ -1,7 +1,7 @@
-# test 100
+# Test
   ***
   ## Description
-  trying to survive
+  sure it does this and that
   ***
   # Table of Contents
   1. [Usage] (#usage)
@@ -12,13 +12,13 @@
   6. [Question] (#questions)
   ***
   ## Usage
-  jsut use it
+  just install it and run it
   ***
   ## License
   MIT
   ***
   ## Credit
-  draconmarius
+  just me
   ***
   ## Contribution
   [Contributor Covenant](https://www.contributor-covenant.org/)
@@ -30,9 +30,4 @@
   **If you have any questions, feel free to contact me at the following:
   [Email](undefined)
 
-  [<img src="logo_github_icon_143196.png" alt='github' height='40'>](https://github.com/DraconMarius) 
-
-  [<img src="logo_linkedin_icon_143191.png" alt='linkedin' height='40'>](undefined)  
-
-  [Icon credit @ Anton Kalashnyk](https://icon-icons.com/users/14quJ7FM9cYdQZHidnZoM/icon-sets/)
 
