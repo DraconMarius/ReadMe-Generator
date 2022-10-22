@@ -97,7 +97,7 @@ function init() {
                 type: "list",
                 message: sixq,
                 name: "license",
-                choices: ["NONE", "Apache 2.0", "BSD 3-Clause", "BSD 2-Clause", "GNU:GPL(GeneralPublicLicense)", "LesserGPL", "MIT", "Mozilla Public License 2.0", "Common Dev and Distr", "Eclipse Public License 2.0"],
+                choices: ["NONE", "Apache 2.0", "BSD 3-Clause", "BSD 2-Clause", "GNU:GPLv3(GeneralPublicLicense)", "LesserGPLv3", "MIT", "Mozilla Public License 2.0", "WTFPL", "Eclipse Public License 2.0"],
             },
             {
                 type: "input",
@@ -128,10 +128,10 @@ function init() {
             {
                 type: "input",
                 message: "What's your linkedIn URL?",
-                namne: "linkedInURL",
+                name: "linkedInURL",
                 when: (answers) => {
-                    if (!answers.linkedIn) {
-                        return false;// 
+                    if (answers.linkedIn) {
+                        return true;// 
                     }
                 },
             },
