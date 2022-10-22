@@ -41,37 +41,55 @@ function generateMarkdown(answers) {
       case ("Apache 2.0"):
         title = title + `
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+        answers.license = `
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
         break;
       case ("BSD 3-Clause"):
         title = title + `
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
+        answers.license = `
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
         break;
       case ("BSD 2-Clause"):
         title = title + `
 [![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`;
+        answers.license = `
+[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`;
         break;
       case ("GNU:GPLv3(GeneralPublicLicense)"):
         title = title + `
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+        answers.license = `
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
         break;
       case ("LesserGPLv3"):
         title = title + `
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`;
+        answers.license = `
+[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`;
         break;
       case ("MIT"):
         title = title + `
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+        answers.license = `
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
         break;
       case ("Mozilla Public License 2.0"):
         title = title + `
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
+        answers.license = `
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
         break;
       case ("WTFPL"):
         title = title + `
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)`;
+        answers.license = `
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)`;
         break;
       case ("Eclipse Public License 2.0"):
         title = title + `
+[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`;
+        answers.license = `
 [![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`;
         break;
     };
@@ -82,7 +100,7 @@ function generateMarkdown(answers) {
   //Note that 83 `title` is the edited version if applicable
   let template = `
   ${title}
-  ***
+  
   ## Description
   *${answers.descr}*
   ***
@@ -101,7 +119,7 @@ function generateMarkdown(answers) {
   ***
   ## License
 
-  > ${answers.license}
+  ${answers.license}
 
   ***
   ## Credit
