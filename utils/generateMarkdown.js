@@ -108,7 +108,7 @@ function generateMarkdown(answers) {
   1. [Installation](#installation)
   2. [Usage](#Usage)
   3. [License](#license)
-  4. [Contribution](#contribution)
+  4. [Contributing](#contributing)
   5. [Testing](#testing)
   6. [Question](#questions)
   ***
@@ -127,7 +127,7 @@ function generateMarkdown(answers) {
   ${answers.license}
 
   ***
-  ## Contributing Instruction
+  ## Contributing
 
   [Contributor Covenant](https://www.contributor-covenant.org/)
 
