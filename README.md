@@ -36,7 +36,7 @@ I was tasked with creating an interactive command-line application that will pro
 
 After ensuring that I had captured all the information that is required, I then focued on creating a simple markdown template that allows us to start plugging in some of the value that we received from inquirer.js. 
 
-Once I was able to gnereate a markdown file based on user inputs correctly, I then implemeneted a swithc case that would generate a license badge based on user's input and append include it in the generation of the markdown file. 
+Once I was able to gnereate a markdown file based on user inputs correctly, I then implemeneted a switch case that would generate a license badge based on user's input and append include it in the generation of the markdown file. *badges hosted by shield.io*
 
 I also created an additional feature where user is able to provide optional github username or linkedin url that will append the relevant badge/credit within the contact me section.
 
