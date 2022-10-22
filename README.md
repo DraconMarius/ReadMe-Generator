@@ -4,6 +4,8 @@
 ***
 A simple command-line applicatoin that prompts user to input details about their project, license, credit, and contact information. It then generate a markdown file that is nicely formatted for the user.
 
+[SAMPLE-GENERATED-README](./assets/SAMPLE.md)
+
 ***
 - [X] Start app in bash / terminal, and be prompted with questions that user will answer
 - [X] A markdown file is then generated. Needs: Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -42,8 +44,8 @@ I also created an additional feature where user is able to provide optional gith
 
 ***
 ## Demo Links / Media
-*(feel free to click on the gif to go to a video demo!)*
-[<img src="./demo.gif" alt='click2go2vid'>](https://draconmarius.github.io/WeatherApp/) 
+*(feel free to click on the gif to go to a **video demo** in Google Drive!)*
+[<img src="./assets/demo.gif" alt='click2go2vid'>](https://drive.google.com/file/d/1SkrviuPiX8yZe3uZ8xRQ04ugSLAxy4Qe/view/) 
 
 ## Technologies Used
 > JavaScript
