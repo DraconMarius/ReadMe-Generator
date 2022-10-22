@@ -7,7 +7,7 @@
   ## Description
   *I will become the president of the world with ind control*
   ***
-  # Table of Contents
+  ## Table of Contents
   1. [Installation](#installation)
   2. [Usage](#Usage)
   3. [License](#license)

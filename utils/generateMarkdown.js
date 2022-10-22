@@ -104,7 +104,7 @@ function generateMarkdown(answers) {
   ## Description
   *${answers.descr}*
   ***
-  # Table of Contents
+  ## Table of Contents
   1. [Installation](#installation)
   2. [Usage](#Usage)
   3. [License](#license)
