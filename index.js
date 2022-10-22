@@ -1,11 +1,11 @@
 /*
 - [X] Start app in bash / terminal, and be prompted with questions that user will answer
-- [ ] A markdown file is then generated. Needs: Description, Table of Contents, 
+- [X] A markdown file is then generated. Needs: Description, Table of Contents, 
                             Installation, Usage, License, Contributing, Tests, and Questions
-- [ ] Also prompt user for the license and add a badge near the top, also explain in relevent section
-- [ ] Asks for username: and add it to the Questions section that is linkable
-- [ ] Asks for email address and add contact instructions
-- [ ] Clikcable table of content within the README
+- [X] Also prompt user for the license and add a badge near the top, also explain in relevent section
+- [X] Asks for username: and add it to the Questions section that is linkable
+- [X] Asks for email address and add contact instructions
+- [X] Clikcable table of content within the README
 */
 //conditional for github and linkedin badges
 
@@ -77,7 +77,7 @@ function init() {
                 name: "usage",
                 validate(answer) {
                     if (!answer) {
-                        return "*ELI5* Explain to me like I'm five please"
+                        return "*ELI5* Explain to me like I'm five please!"
                     }
                     return true
                 }
